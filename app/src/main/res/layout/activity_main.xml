@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#00000000"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    android:id="@+id/parentLayout">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
+        android:id="@+id/date_time_layout"
+        >
+        <TextView
+            android:id="@+id/time_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12:00 AM"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="48dp" />
+
+        <TextView
+            android:id="@+id/date_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DATE"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/main_screen_button_layout">
+       <GridLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+           android:columnCount="4"
+           android:rowCount="1"
+           android:id="@+id/main_screen_button_grid_layout">
+
+           <Button
+               android:layout_gravity="left"
+               android:layout_marginRight="45dp"
+               android:layout_marginTop="10dp"
+               android:layout_height="60dp"
+               android:layout_width="60dp"
+               android:layout_marginLeft="10dp"
+               android:background="@drawable/dial"
+               android:id="@+id/dial_button"/>
+           <Button
+               android:layout_marginRight="45dp"
+               android:layout_marginTop="15dp"
+               android:layout_height="50dp"
+               android:layout_width="50dp"
+               android:background="@drawable/message"
+               android:id="@+id/message_button"/>
+           <Button
+               android:layout_marginTop="10dp"
+               android:layout_height="55dp"
+               android:layout_width="55dp"
+               android:background="@drawable/gallery"
+               android:id="@+id/gallery_button"/>
+           <Button
+               android:layout_gravity="right"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="10dp"
+               android:layout_height="55dp"
+               android:layout_width="60dp"
+               android:background="@drawable/camera"
+               android:id="@+id/camera_button"/>
+       </GridLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>
