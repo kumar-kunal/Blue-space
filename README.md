@@ -1,2 +1,2 @@
-# blue-space
+# Blue-space
 An android launcher
